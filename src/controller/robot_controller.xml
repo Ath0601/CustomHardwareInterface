@@ -1,0 +1,7 @@
+<library path="librobot_controller">
+  <class name="robot_controller::RobotController"
+         type="robot_controller::RobotController"
+         base_class_type="controller_interface::ControllerInterface">
+    <description>Simple custom position controller</description>
+  </class>
+</library>

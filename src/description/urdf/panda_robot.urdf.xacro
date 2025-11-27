@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="panda">
+
+  <!-- Include robot geometry -->
+  <xacro:include filename="$(find description)/urdf/panda.urdf.xacro"/>
+
+  <!-- Include ros2_control block -->
+  <xacro:include filename="$(find description)/ros2_control/panda_robot.ros2_control.xacro"/>
+
+  <!-- Include transmissions -->
+  <xacro:include filename="$(find description)/transmission/panda.transmission.xacro"/>
+
+  <!-- Instantiate macros -->
+  <xacro:panda_description/>
+  <xacro:panda_ros2_control/>
+  <xacro:panda_transmissions/>
+
+  <!--<link name="world"/>
+  <joint name="world_to_panda" type="fixed">
+      <parent link="world"/>
+      <child link="panda_link0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>-->
+
+</robot>

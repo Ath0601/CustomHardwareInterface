@@ -1,0 +1,7 @@
+<library path="librobot_can_hardware">
+  <class name="robot_can_hardware::RobotCANHardware"
+         type="robot_can_hardware::RobotCANHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>Custom CAN-based hardware interface using FakeCAN</description>
+  </class>
+</library>
